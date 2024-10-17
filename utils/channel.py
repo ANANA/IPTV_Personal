@@ -5,7 +5,6 @@ from utils.tools import (
     check_ipv6_support,
     process_nested_dict,
     get_resolution_value,
-    format_interval,
 )
 from utils.speed import (
     sort_urls_by_speed_and_resolution,
@@ -25,7 +24,6 @@ import base64
 import pickle
 import copy
 import datetime
-from time import time
 
 log_dir = "output"
 log_file = "result_new.log"
@@ -59,6 +57,23 @@ def cleanup_logging():
             logging.root.removeHandler(handler)
     if os.path.exists(log_path):
         os.remove(log_path)
+
+
+txt_pattern = r"^(.*?),(?!#genre#)(.*?)$"
+m3u_pattern = r"^#EXTINF:-1.*?,(.*?)\n(.*?)$"
+
+
+def get_name_url(content):
+    """
+    Get channel name and url from content
+    """
+    matches = re.findall(
+        m3u_pattern if "#EXTM3U" in content else txt_pattern, content, re.MULTILINE
+    )
+    channels = [
+        {"name": match[0].strip(), "url": match[1].strip()} for match in matches
+    ]
+    return channels
 
 
 def get_channel_data_from_file(channels, file, use_old):
@@ -121,7 +136,7 @@ def format_channel_name(name):
         return name
     cc = OpenCC("t2s")
     name = cc.convert(name)
-    sub_pattern = r"-|_|\((.*?)\)|\（(.*?)\）|\[(.*?)\]| |｜|频道|普清|标清|高清|HD|hd|超清|超高|超高清|中央|央视|台"
+    sub_pattern = r"-|_|\((.*?)\)|\（(.*?)\）|\[(.*?)\]|\「(.*?)\」| |｜|频道|普清|标清|高清|HD|hd|超清|超高|超高清|中央|央视|台"
     name = re.sub(sub_pattern, "", name)
     replace_dict = {
         "plus": "+",
@@ -706,6 +721,7 @@ async def process_sort_channel_list(data, callback=None):
                 if len(url_rsplit) != 2:
                     continue
                 url, cache_key = url_rsplit
+                url = url.split("$")[0]
                 if url in sort_urls or cache_key not in speed_cache:
                     continue
                 cache = speed_cache[cache_key]
