@@ -6,8 +6,6 @@ CCTV-13,https://ldncctvwbcdcnc.v.wscdns.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u
 CCTV-14,https://event.pull.hebtv.com/jishi/cp2.m3u8
 
 📡卫视频道,#genre#
-浙江卫视,http://ali-vl.cztv.com/channels/lantian/channel001/360p.m3u8
-浙江卫视,http://ali-vl.cztv.com/channels/lantian/channel001/360p.m3u8?a=1000&amp;d=d396e340de48108a9576134d5b090354&amp;k=60ede3db45d8640ab1db2b9f0dfa7549&amp;t=1671539989
 东南卫视,http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
 河北卫视,https://jwplay.hebyun.com.cn/live/hbwstv/1500k/tzwj_video.m3u8
 山西卫视,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8
@@ -16,4 +14,4 @@ CCTV-14,https://event.pull.hebtv.com/jishi/cp2.m3u8
 西藏卫视,http://www.lysvc.cc/daili/xztv.php?id=0
 
 🕘️更新时间,#genre#
-2025-07-01 18:31:01,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
+2025-07-01 22:08:56,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
