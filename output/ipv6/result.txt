@@ -396,4 +396,4 @@ CCTV-17,http://[2409:8087:1a01:df::4025]:80/TVOD/88888888/224/3221225708/main.m3
 云南卫视,http://dsj.motem.top:8880/bptv/10000100000000050000000003887453.m3u8
 
 🕘️更新时间,#genre#
-2025-08-24 17:30:42,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
+2025-08-25 17:35:56,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
