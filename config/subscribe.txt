@@ -8,4 +8,6 @@ https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
 https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/others_output.txt
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
 https://raw.githubusercontent.com/Rivens7/Livelist/refs/heads/main/IPTV.m3u
-https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
+https://m3u.ibert.me/txt/fmml_ipv6.txt
+https://m3u.ibert.me/txt/fmml_itv.txt
+https://m3u.ibert.me/txt/fmml_index.txt
