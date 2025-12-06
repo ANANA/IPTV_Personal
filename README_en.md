@@ -3,27 +3,37 @@
   <h1 align="center">IPTV-API</h1>
 </div>
 
-<div align="center">A highly customizable IPTV interface update project 📺, with customizable channel menus, automatic live stream acquisition, speed testing, and validation to generate usable results, achieving 『✨instant playback experience🚀』</div>
-<br>
+📺 IPTV live-source auto-update platform — 🤖 fully automated collection, filtering, speed-testing, and generation
+pipeline 🚀. Supports extensive customization; paste the resulting URL into your player to watch
+
+<p align="center">
+    <br>
+    <a href="https://trendshift.io/repositories/12327" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12327" alt="Guovin%2Fiptv-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</p>
+
 <p align="center">
   <a href="https://github.com/Guovin/iptv-api/releases/latest">
-    <img src="https://img.shields.io/github/v/release/guovin/iptv-api" />
+    <img src="https://img.shields.io/github/v/release/guovin/iptv-api?label=Version" />
   </a>
   <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/python-%20%3D%203.13-47c219" />
+    <img src="https://img.shields.io/badge/python-3.13-47c219?label=Python" />
   </a>
   <a href="https://github.com/Guovin/iptv-api/releases/latest">
-    <img src="https://img.shields.io/github/downloads/guovin/iptv-api/total" />
+    <img src="https://img.shields.io/github/downloads/guovin/iptv-api/total?label=GUI%20Downloads" />
   </a>
   <a href="https://hub.docker.com/repository/docker/guovern/iptv-api">
-    <img src="https://img.shields.io/docker/pulls/guovern/iptv-api" />
+    <img src="https://img.shields.io/docker/pulls/guovern/iptv-api?label=Docker%20Pulls" />
   </a>
   <a href="https://github.com/Guovin/iptv-api/fork">
-    <img src="https://img.shields.io/github/forks/guovin/iptv-api" />
+    <img src="https://img.shields.io/github/forks/guovin/iptv-api?label=Forks" />
   </a>
 </p>
 
+<div align="center">
+
 [中文](./README.md) | English
+
+</div>
 
 🎉💻 [IPTV-Web](https://github.com/Guovin/iptv-web): IPTV live stream management platform, supports online playback and
 other features, under development...
@@ -34,15 +44,15 @@ other features, under development...
 - [🔗 Latest results](#latest-results)
 - [⚙️ Config parameter](#Config)
 - [🚀 Quick Start](#quick-start)
-    - [Directory Description](#directory-description)
+    - [Configuration and Results Directory](#configuration-and-results-directory)
     - [Workflow](#workflow)
     - [Command Line](#command-line)
     - [GUI Software](#gui-software)
     - [Docker](#docker)
 - [📖 Detailed Tutorial](./docs/tutorial_en.md)
 - [🗓️ Changelog](./CHANGELOG.md)
-- [❤️ Appreciate](#appreciate)
-- [👀 Follow the public account](#follow)
+- [❤️ Donations](#donations)
+- [👀 Follow](#follow)
 - [⭐️ Star History](#star-history)
 - [📣 Disclaimer](#disclaimer)
 - [⚖️ License](#license)
@@ -72,20 +82,20 @@ other features, under development...
 
 ## Core Features
 
-| Feature                               | Status | Description                                                                                                |
-|:--------------------------------------|:------:|:-----------------------------------------------------------------------------------------------------------|
-| **Custom Templates**                  |   ✅    | Generate personalized channels as you wish                                                                 |
-| **Channel Alias**                     |   ✅    | Improves channel result coverage and accuracy, supports regular expressions                                |
-| **Multiple Source Types**             |   ✅    | Supports local sources, multicast, hotel sources, subscriptions, and keyword search                        |
-| **RTMP Streaming**                    |   ✅    | Supports Live and HLS modes to enhance live playback experience                                            |
-| **Playback Interfaces**               |   ✅    | Supports acquisition and generation of playback interfaces                                                 |
-| **EPG (Electronic Program Guide)**    |   ✅    | Displays channel preview content                                                                           |
-| **Channel Logo**                      |   ✅    | Supports custom channel logo library sources                                                               |
-| **Interface Speed Test & Validation** |   ✅    | Measures latency, speed, resolution, and filters invalid interfaces                                        |
-| **Advanced Preferences**              |   ✅    | IPv4/IPv6, interface sorting priority, quantity configuration, blacklist/whitelist, region & ISP filtering |
-| **Scheduled Tasks**                   |   ✅    | Automatically updates at 6:00 and 18:00 Beijing time daily by default; customizable schedule               |
-| **Multiple Run Modes**                |   ✅    | Supports workflow, CLI, GUI software, Docker (amd64/arm64/arm v7)                                          |
-| **More Features**                     |   ✨    | See [Configuration Parameters](#Config) section for details                                                |
+| Feature                               | Status | Description                                                                                                                         |
+|:--------------------------------------|:------:|:------------------------------------------------------------------------------------------------------------------------------------|
+| **Custom Templates**                  |   ✅    | Generate personalized channels as you wish                                                                                          |
+| **Channel Alias**                     |   ✅    | Improves channel result coverage and accuracy, supports regular expressions                                                         |
+| **Multiple Source Types**             |   ✅    | Supports local sources, multicast, hotel sources, subscriptions, and keyword search                                                 |
+| **RTMP streaming**                    |   ✅    | Supports HLS mode (segmented / adaptive bitrate), improves compatibility and reduces buffering, enhancing playback on weak networks |
+| **Playback Interfaces**               |   ✅    | Supports acquisition and generation of playback interfaces                                                                          |
+| **EPG (Electronic Program Guide)**    |   ✅    | Displays channel preview content                                                                                                    |
+| **Channel Logo**                      |   ✅    | Supports custom channel logo library sources                                                                                        |
+| **Interface Speed Test & Validation** |   ✅    | Measures latency, speed, resolution, and filters invalid interfaces                                                                 |
+| **Advanced Preferences**              |   ✅    | IPv4/IPv6, interface sorting priority, quantity configuration, blacklist/whitelist, region & ISP filtering                          |
+| **Scheduled Tasks**                   |   ✅    | Automatically updates at 6:00 and 18:00 Beijing time daily by default; customizable schedule                                        |
+| **Multiple Run Modes**                |   ✅    | Supports workflow, CLI, GUI software, Docker (amd64/arm64/arm v7)                                                                   |
+| **More Features**                     |   ✨    | See [Configuration Parameters](#Config) section for details                                                                         |
 
 ## Latest results
 
@@ -122,8 +132,8 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 ## Config
 
 > [!NOTE]\
-> The following configuration items are located in the `config/config.ini` file. You can modify them via the
-> configuration file or environment variables (with the same item name). After saving changes, restart to take effect.
+> The following configuration items are located in `config/config.ini` and can be modified via the configuration file or
+> environment variables. Save changes and restart to apply.
 
 | Configuration Item     | Description                                                                                                                                                                                                                                                                                                                                                                                                                      | Default Value     |
 |:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
@@ -153,7 +163,12 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 | open_use_cache         | Enable the use of local cache data, applicable to the query request failure scenario (only for hotel sources and multicast sources)                                                                                                                                                                                                                                                                                              | True              |
 | open_history           | Enable the use of historical update results (including the interface for template and result files) and merge them into the current update                                                                                                                                                                                                                                                                                       | True              |
 | open_headers           | Enable to use the request header verification information contained in M3U, used for speed measurement and other operations. Note: Only a few players support playing this type of interface with verification information, which is turned off by default                                                                                                                                                                       | False             |
+| app_host               | Page service Host address, default is to use the local machine IP                                                                                                                                                                                                                                                                                                                                                                |                   |
 | app_port               | Page service port, used to control the port number of the page service                                                                                                                                                                                                                                                                                                                                                           | 8000              |
+| nginx_http_port        | Nginx HTTP service port, used for the HTTP service port of RTMP push forwarding                                                                                                                                                                                                                                                                                                                                                  | 8080              |
+| nginx_rtmp_port        | Nginx RTMP service port, used for the RTMP service port of RTMP push forwarding                                                                                                                                                                                                                                                                                                                                                  | 1935              |
+| public_scheme          | Public network protocol, optional values: http, https                                                                                                                                                                                                                                                                                                                                                                            | http              |
+| public_domain          | Public network Host address, used to generate the access address in the result, the local machine IP is used by default                                                                                                                                                                                                                                                                                                          |                   |
 | cdn_url                | CDN proxy acceleration address, used for accelerated access to subscription sources, channel icons and other resources                                                                                                                                                                                                                                                                                                           |                   |
 | final_file             | Generated result file path                                                                                                                                                                                                                                                                                                                                                                                                       | output/result.txt |
 | hotel_num              | The number of preferred hotel source interfaces in the results                                                                                                                                                                                                                                                                                                                                                                   | 10                |
@@ -181,6 +196,8 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 | origin_type_prefer     | Preferred interface source of the result, the result is sorted according to this order, separated by commas, for example: local, hotel, multicast, subscribe, online_search; local: local source, hotel: hotel source, multicast: multicast source, subscribe: subscription source, online_search: keyword search; If not filled in, it means that the source is not specified, and it is sorted according to the interface rate |                   |
 | recent_days            | Retrieve interfaces updated within a recent time range (in days), reducing appropriately can avoid matching issues                                                                                                                                                                                                                                                                                                               | 30                |
 | request_timeout        | Query request timeout duration, in seconds (s), used to control the timeout and retry duration for querying interface text links. Adjusting this value can optimize update time.                                                                                                                                                                                                                                                 | 10                |
+| rtmp_idle_timeout      | RTMP channel interface idle stop streaming timeout duration, unit seconds (s), used to control the interface to stop streaming after exceeding this duration when no one is watching, adjusting this value can optimize server resource usage                                                                                                                                                                                    | 60                |
+| rtmp_max_streams       | RTMP maximum concurrent streaming quantity, used to control the number of channels streaming at the same time, the larger the value, the greater the server pressure, adjusting this value can optimize server resource usage                                                                                                                                                                                                    | 10                |
 | speed_test_limit       | Number of interfaces to be tested at the same time, used to control the concurrency during the speed measurement stage, the larger the value, the shorter the speed measurement time, higher load, and the result may be inaccurate; The smaller the value, the longer the speed measurement time, lower load, and more accurate results; Adjusting this value can optimize the update time                                      | 10                |
 | speed_test_timeout     | Single interface speed measurement timeout duration, unit seconds (s); The larger the value, the longer the speed measurement time, which can improve the number of interfaces obtained, but the quality will decline; The smaller the value, the shorter the speed measurement time, which can obtain low-latency interfaces with better quality; Adjusting this value can optimize the update time                             | 10                |
 | speed_test_filter_host | Use Host address for filtering during speed measurement, channels with the same Host address will share speed measurement data, enabling this can significantly reduce the time required for speed measurement, but may lead to inaccurate speed measurement results                                                                                                                                                             | False             |
@@ -193,34 +210,34 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 
 ## Quick Start
 
-### Directory Description
+### Configuration and Results Directory
 
-| Directory Path            | Description                                                           |
-|:--------------------------|:----------------------------------------------------------------------|
-| config                    | Configuration files directory, includes config files, templates, etc. |
-| config/config.ini         | Configuration parameters file                                         |
-| config/rtp                | Multicast IPs for each region/operator                                |
-| config/demo.txt           | Channel template                                                      |
-| config/alias.txt          | Channel aliases                                                       |
-| config/blacklist.txt      | Interface blacklist                                                   |
-| config/whitelist.txt      | Interface whitelist                                                   |
-| config/subscribe.txt      | Channel subscription sources list                                     |
-| config/local.txt          | Local source file                                                     |
-| config/epg.txt            | EPG subscription sources list                                         |
-| output                    | Output files directory, includes generated result files, etc.         |
-| output/data               | Result data cache directory                                           |
-| output/epg                | EPG result directory                                                  |
-| output/ipv4               | IPv4 result directory                                                 |
-| output/ipv6               | IPv6 result directory                                                 |
-| output/result(.m3u/txt)   | m3u/txt result                                                        |
-| output/live(.m3u/txt)     | RTMP live stream result                                               |
-| output/hls(.m3u/txt)      | RTMP hls stream result                                                |
-| output/log                | Log files directory                                                   |
-| output/log/result.log     | Valid result log                                                      |
-| output/log/speed_test.log | Speed test log                                                        |
-| output/log/statistic.log  | Statistics result log                                                 |
-| output/log/nomatch.log    | Unmatched channel records                                             |
-| source.json               | VOD source configuration file                                         |
+```
+iptv-api/                  # Project root directory
+├── config                 # Configuration files directory, includes config files, templates, etc.
+│   └── config.ini         # Configuration parameters file
+│   └── rtp                # Multicast IPs for each region/operator
+│   └── demo.txt           # Channel template
+│   └── alias.txt          # Channel aliases
+│   └── blacklist.txt      # Interface blacklist
+│   └── whitelist.txt      # Interface whitelist
+│   └── subscribe.txt      # Channel subscription sources list
+│   └── local.txt          # Local source file
+│   └── epg.txt            # EPG subscription sources list
+├── output                 # Output files directory, includes generated result files, etc.
+│   └── data               # Result data cache directory
+│   └── epg                # EPG result directory
+│   └── ipv4               # IPv4 result directory
+│   └── ipv6               # IPv6 result directory
+│   └── result.m3u/txt     # m3u/txt result
+│   └── hls.m3u/txt        # RTMP hls stream result
+│   └── log                # Log files directory
+│       └── result.log     # Valid result log
+│       └── speed_test.log # Speed test log
+│       └── statistic.log  # Statistics result log
+│       └── nomatch.log    # Unmatched channel records
+└── source.json            # VOD source configuration file
+```
 
 ### Workflow
 
@@ -296,10 +313,15 @@ Taking the host path /etc/docker as an example:
 
 ##### Environment Variables:
 
-| Variable | Description          | Default Value      |
-|:---------|:---------------------|:-------------------|
-| APP_HOST | Service host address | "http://localhost" |
-| APP_PORT | Service port         | 8000               |
+| Variable        | Description             | Default Value    |
+|:----------------|:------------------------|:-----------------|
+| APP_HOST        | Service host address    | Local machine IP |
+| APP_PORT        | Service port            | 8000             |
+| NGINX_HTTP_PORT | Nginx HTTP service port | 8080             |
+| NGINX_RTMP_PORT | Nginx RTMP service port | 1935             |
+
+In addition to the environment variables listed above, you can also override the [configuration items](#Config) in the
+configuration file via environment variables.
 
 #### 3. Update Results
 
@@ -323,50 +345,49 @@ Taking the host path /etc/docker as an example:
 - RTMP Streaming:
 
 > [!NOTE]
-> 1. To stream local video sources, create a `live` or `hls` (recommended) folder in the `config` directory.
-> 2. The `live` folder is used for live streaming interfaces, and the `hls` folder is used for HLS streaming interfaces.
-> 3. Place video files named after the `channel name` into these folders, and the program will automatically stream them
-     to the corresponding channels.
-> 4. Visit http://localhost:8080/stat to view real-time streaming status statistics.
+> 1. After enabling streaming, obtained sources (for example subscription sources) will be streamed by default.
+> 2. To stream local video sources, create an `hls` folder inside the `config` directory.
+> 3. Place video files named with the `channel name` into that folder; the program will automatically stream them to the
+     corresponding channels.
+> 4. Visit `http://localhost:8080/stat` to view real-time streaming status and statistics.
 
-| Streaming Endpoint | Description                      |
-|:-------------------|:---------------------------------|
-| /live              | live streaming endpoint          |
-| /hls               | hls streaming endpoint           |
-| /live/txt          | live txt streaming endpoint      |
-| /hls/txt           | hls txt streaming endpoint       |
-| /live/m3u          | live m3u streaming endpoint      |
-| /hls/m3u           | hls m3u streaming endpoint       |
-| /live/ipv4/txt     | live ipv4 txt streaming endpoint |
-| /hls/ipv4/txt      | hls ipv4 txt streaming endpoint  |
-| /live/ipv4/m3u     | live ipv4 m3u streaming endpoint |
-| /hls/ipv4/m3u      | hls ipv4 m3u streaming endpoint  |
-| /live/ipv6/txt     | live ipv6 txt streaming endpoint |
-| /hls/ipv6/txt      | hls ipv6 txt streaming endpoint  |
-| /live/ipv6/m3u     | live ipv6 m3u streaming endpoint |
-| /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint  |
+| Streaming Endpoint | Description                     |
+|:-------------------|:--------------------------------|
+| /hls               | hls streaming endpoint          |
+| /hls/txt           | hls txt streaming endpoint      |
+| /hls/m3u           | hls m3u streaming endpoint      |
+| /hls/ipv4/txt      | hls ipv4 txt streaming endpoint |
+| /hls/ipv4/m3u      | hls ipv4 m3u streaming endpoint |
+| /hls/ipv6/txt      | hls ipv6 txt streaming endpoint |
+| /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint |
 
 ## Changelog
 
 [Changelog](./CHANGELOG.md)
 
-## Appreciate
+## Follow
+
+### GitHub
+
+Follow my GitHub account [Guovin](https://github.com/Guovin) to find more useful projects
+
+### WeChat public account
+
+WeChat public account search for Govin, or scan the code to receive updates and learn more tips:
+
+![Wechat public account](./static/images/qrcode.jpg)
+
+## Star History
+
+[![Star History Chart](https://starchart.cc/Guovin/iptv-api.svg?variant=adaptive)](https://starchart.cc/Guovin/iptv-api)
+
+## Donations
 
 <div>Development and maintenance are not easy, please buy me a coffee ~</div>
 
 | Alipay                                | Wechat                                    |
 |---------------------------------------|-------------------------------------------|
 | ![Alipay](./static/images/alipay.jpg) | ![Wechat](./static/images/appreciate.jpg) |
-
-## Follow
-
-Wechat public account search for Govin, or scan the code to receive updates and learn more tips:
-
-![Wechat public account](./static/images/qrcode.jpg)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Guovin/iptv-api&type=Date)](https://star-history.com/#Guovin/iptv-api&Date)
 
 ## Disclaimer
 

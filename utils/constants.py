@@ -5,8 +5,6 @@ config_dir = "config"
 
 output_dir = "output"
 
-live_path = os.path.join(config_dir, "live")
-
 hls_path = os.path.join(config_dir, "hls")
 
 alias_path = os.path.join(config_dir, "alias.txt")
@@ -26,12 +24,6 @@ epg_gz_result_path = os.path.join(output_dir, "epg/epg.gz")
 ipv4_result_path = os.path.join(output_dir, "ipv4/result.txt")
 
 ipv6_result_path = os.path.join(output_dir, "ipv6/result.txt")
-
-live_result_path = os.path.join(output_dir, "live.txt")
-
-live_ipv4_result_path = os.path.join(output_dir, "ipv4/live.txt")
-
-live_ipv6_result_path = os.path.join(output_dir, "ipv6/live.txt")
 
 rtmp_data_path = os.path.join(output_dir, "data/rtmp.db")
 
@@ -56,7 +48,7 @@ log_path = os.path.join(output_dir, "log/log.log")
 url_host_pattern = re.compile(r"((https?|rtmp|rtsp)://)?([^:@/]+(:[^:@/]*)?@)?(\[[0-9a-fA-F:]+]|([\w-]+\.)+[\w-]+)")
 
 url_pattern = re.compile(
-    r"(?P<url>" + url_host_pattern.pattern + r"(?:\S*?(?=\?$|\?\$|$)|[^\s?]*))")
+    r"(?P<url>" + url_host_pattern.pattern + r"\S*)")
 
 rt_url_pattern = re.compile(r"^(rtmp|rtsp)://.*$")
 
@@ -79,7 +71,7 @@ multiline_m3u_pattern = re.compile(
 key_value_pattern = re.compile(r'(?P<key>\w+)=(?P<value>\S+)')
 
 sub_pattern = re.compile(
-    r"-|_|\((.*?)\)|（(.*?)）|\[(.*?)]|「(.*?)」| |｜|频道|普清|标清|高清|HD|hd|超清|超高|超高清|中央|央视|电视台|台|电信|联通|移动")
+    r"-|_|\((.*?)\)|（(.*?)）|\[(.*?)]|「(.*?)」| |｜|频道|普清|标清|高清|HD|hd|超清|超高|超高清|4K|4k|中央|央视|电视台|台|电信|联通|移动")
 
 replace_dict = {
     "plus": "+",
@@ -130,6 +122,6 @@ ipv6_proxy = "http://www.ipv6proxy.net/go.php?u="
 
 foodie_url = "http://www.foodieguide.com/iptvsearch/"
 
-foodie_hotel_url = "http://www.foodieguide.com/iptvsearch/hoteliptv.php"
+foodie_hotel_url = "http://www.foodieguide.com/iptvsearch/iptvhotel.php"
 
 waiting_tip = "📄结果将在更新完成后生成，请耐心等待..."
