@@ -62,16 +62,16 @@ CCTV-12,https://zby.130519.xyz/PLTV/11/224/3221226103/index.m3u8
 CCTV-12,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226942/1.m3u8?
 CCTV-12,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8
 CCTV-12,http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225731/index.m3u8
-CCTV-13,https://cdn13.178.indevs.in/163189/790bc5f7f0f06879
-CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695579599148417708.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1775651827&major_anchor_level=common&sign=25aa61acbb8c946b2ee9ebd23cb4f905&t_id=037-202604012037061F5AB8029BCE7A81E5C7-0wCcv3
-CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695553383939179180.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1775651921&major_anchor_level=common&sign=0f3e5eb58649c980acb45c230fbd212e&t_id=037-20260401203840F95EAF06830CA99FC12D-5ue7Hg
 CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695553383939179180.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1775812647&major_anchor_level=common&sign=a16a13163e5a1bb150e2fdd5448bc59d&t_id=037-2026040317172716CCE7A11D64BD3CD9C0-IOLuIy
+CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695579599148417708.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1776158026&major_anchor_level=common&sign=570d99ae8e46e223e5dcf8866006b64d&t_id=037-2026040717134608B5CC3E9E05A50957E4-1VdjWb
 CCTV-13,https://cdn3.163189.xyz/163189/cctv13
 CCTV-13,http://cdn3.163189.xyz/163189/cctv13
-CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695579599148417708.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1776158026&major_anchor_level=common&sign=570d99ae8e46e223e5dcf8866006b64d&t_id=037-2026040717134608B5CC3E9E05A50957E4-1VdjWb
 CCTV-13,http://pull-hls-f11.douyincdn.com/media/stream-695553383939179180.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1776158091&major_anchor_level=common&sign=b6ff08dbb56dc9d66ae8fbe7a039d11e&t_id=037-202604071714506C37CC7AC813301C7CED-7CmlV9
+CCTV-13,https://cdn13.178.indevs.in/163189/790bc5f7f0f06879
 CCTV-13,http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8
 CCTV-13,https://zby.130519.xyz/PLTV/11/224/3221226128/index.m3u8
+CCTV-13,https://event.pull.hebtv.com/jishi/cp1.m3u8
+CCTV-13,https://epg.pw/stream/5d3d047c64e44d0a24dc33e5700e579457201d2960036b43819bd930a0bb76a7.m3u8
 CCTV-14,http://iptv.huuc.edu.cn/hls/cctv14hd.m3u8
 CCTV-14,https://zby.130519.xyz/PLTV/11/224/3221225738/index.m3u8
 CCTV-14,https://event.pull.hebtv.com/jishi/cp2.m3u8
@@ -114,9 +114,9 @@ CCTV-17,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888
 江苏卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226897/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E0BmO6uHF7WFoTed__Xr3NQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 东方卫视,http://iptv.huuc.edu.cn/hls/dfhd.m3u8
 东方卫视,https://zby.130519.xyz/PLTV/11/224/3221225725/index.m3u8
-东方卫视,https://epg.pw/stream/6aec3ea636542c53729b5c9dd290864ab04d4a69d2b9cb7864a9898779915898.m3u8
 东方卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226898/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E0uh4lyjjBCCN7TCq21vSIQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
-东南卫视,https://t.freetv.fun/live/dong-nan-wei-shi-1.php
+东方卫视,https://t.freetv.fun/live/dong-fang-wei-shi-gao-qing.m3u8
+东方卫视,https://epg.pw/stream/6aec3ea636542c53729b5c9dd290864ab04d4a69d2b9cb7864a9898779915898.m3u8
 东南卫视,https://hlsbkmgsplive.miguvideo.com/migu/kailu/dongnanws/51/20230724/01.m3u8?&HlsSubType=&encrypt=
 东南卫视,http://iptv.huuc.edu.cn/hls/dnhd.m3u8
 东南卫视,https://zby.130519.xyz/PLTV/11/224/3221225745/index.m3u8
@@ -148,7 +148,6 @@ CCTV-17,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888
 山西卫视,https://zby.130519.xyz/PLTV/11/224/3221226113/index.m3u8
 山西卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227016/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ESb5Qr3NTpE2ZugIroKoyTw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 山西卫视,https://t.freetv.fun/live/shan-xi-wei-shi-3-2.m3u8
-山西卫视,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8
 重庆卫视,https://hlsbkmgsplive.miguvideo.com/envivo_x/2018/SD/chongqing/1000/01.m3u8?&HlsSubType=&encrypt=
 重庆卫视,http://iptv.huuc.edu.cn/hls/cqhd.m3u8
 重庆卫视,https://zby.130519.xyz/PLTV/11/224/3221226171/index.m3u8
@@ -181,7 +180,6 @@ CCTV-17,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888
 吉林卫视,https://zby.130519.xyz/PLTV/11/224/3221226149/index.m3u8
 吉林卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227015/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EW5-3AVdwD5KlUpuA4mz7Cg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 青海卫视,https://zby.130519.xyz/PLTV/11/224/3221226105/index.m3u8
-青海卫视,http://lu.wqwqwq.sbs/itv/1000000002000013359.m3u8?cdn=ystenlive
 青海卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227017/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EacviHy_ucMT27Ymf2iLtZA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 西藏卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227033/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EdeTB7OZ9G_VNJk5C3t96fQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 新疆卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227011/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ExAUu61iVvo_xYbANWJhgXw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
@@ -190,4 +188,4 @@ CCTV-17,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888
 云南卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227028/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EGfQPqRNVeBjTMsZ48qu0SA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 
 🕘️更新时间,#genre#
-2026-04-08 17:37:16,https://cdn13.178.indevs.in/163189/bea1d91d91364062
+2026-04-09 17:37:52,https://cdn13.178.indevs.in/163189/bea1d91d91364062
